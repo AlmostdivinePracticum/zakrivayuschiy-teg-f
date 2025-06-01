@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
@@ -9,10 +9,652 @@
     <link rel="stylesheet" href="./styles/globals.css" />
     <link rel="stylesheet" href="./styles/style.css" />
     <link rel="stylesheet" href="./styles/animations.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./favicon-16x16.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./favicon-32x32.png"
+    />
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="./apple-touch-icon.png" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="./android-chrome-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="512x512"
+      href="./android-chrome-512x512.png"
+    />
+    <link rel="manifest" href="./site.webmanifest" />
   </head>
   <body class="page">
-    <header class="header"></header>
-    <main></main>
+    <header class="header">
+      <div class="header__banner">
+        <h1 class="banner__title">&lt;/HTML&gt;</h1>
+        <p class="banner__text">закрывающий тег</p>
+      </div>
+    </header>
+    <main class="cards">
+      <article class="card">
+        <h2 class="card__title">
+          Фритрек и нулевой спринт: Подготовка к работе
+        </h2>
+        <div class="card__image-wrapper tag-html">
+          <img
+            src="./images/1.png"
+            alt="Начало пути"
+            class="card__image image-filter-few"
+          />
+        </div>
+        <p class="card__text">
+          <span>
+            Это было самое начало пути. На этом этапе важно было проникнуться
+            основами и настроиться на учёбу. И, возможно, подумать, как новые
+            знания могут повлиять на ваше будущее.
+          </span>
+          <span>
+            Обучение фронтенд-разработке — это не просто освоение HTML, CSS и
+            JavaScript. Это целое путешествие, наполненное первыми успехами,
+            небольшими паническими моментами и множеством "ага!" внутри головы.
+            Здесь, в этом месте, вы можете оставить на память своё воспоминание
+            о самом начале пути — о том, как всё начиналось. О фритеке , когда
+            казалось, что ты ничего не знаешь, но уже рвётся в бой. О нулевом
+            спринте , который стал вашей первой настоящей подготовкой к работе
+            мечты. Это ваш цифровой альбом воспоминаний — смелее рассказывайте,
+            как делали первый коммит, как верстали первую страницу и что пошло
+            не так (или даже как пошло таки правильно).
+          </span>
+        </p>
+        <div class="card__footer">
+          <button type="button" class="card__icon-button">
+            <svg
+              width="39"
+              height="36"
+              viewBox="0 0 39 36"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              class="like-icon"
+            >
+              <g class="heart">
+                <path
+                  class="contour"
+                  d="M12 6H9V9H12V6ZM15 6H12V9H15V6ZM9 9H6V12H9V9ZM9 12H6V15H9V12ZM9 15H6V18H9V15ZM18 6H15V9H18V6ZM12 18H9V21H12V18ZM15 21H12V24H15V21ZM18 24H15V27H18V24ZM27 6H30V9H27V6ZM24 6H27V9H24V6ZM30 9H33V12H30V9ZM30 12H33V15H30V12ZM30 15H33V18H30V15ZM21 6H24V9H21V6ZM27 18H30V21H27V18ZM24 21H27V24H24V21ZM21 24H24V27H21V24ZM21 27H18V30H21V27ZM21 9H18V12H21V9Z"
+                  fill="black"
+                />
+                <path
+                  class="main-body"
+                  d="M12 9H9V12H12V9ZM15 12H12V15H15V12ZM18 9H15V12H18V9ZM12 15H9V18H12V15ZM15 15H12V18H15V15ZM15 18H12V21H15V18ZM18 12H15V15H18V12ZM18 21H15V24H18V21ZM18 18H15V21H18V18ZM27 9H30V12H27V9ZM24 9H27V12H24V9ZM27 12H30V15H27V12ZM24 12H27V15H24V12ZM21 9H24V12H21V9ZM27 15H30V18H27V15ZM24 15H27V18H24V15ZM24 18H27V21H24V18ZM21 12H24V15H21V12ZM21 21H24V24H21V21ZM21 18H24V21H21V18ZM21 21H18V24H21V21ZM21 24H18V27H21V24Z"
+                  fill="none"
+                />
+                <path
+                  class="core"
+                  d="M18 15H15V18H18V15ZM21 15H24V18H21V15ZM21 15H18V18H21V15ZM21 12H18V15H21V12ZM21 18H18V21H21V18Z"
+                  fill="none"
+                />
+              </g>
+              <path
+                class="sparks"
+                d="M36 13H39V16H36V13ZM27 27H30V30H27V27ZM18 33H21V36H18V33ZM9 27H12V30H9V27ZM24 0H27V3H24V0ZM33 3H36V6H33V3ZM3 3H6V6H3V3ZM12 0H15V3H12V0ZM0 13H3V16H0V13Z"
+                fill="var(--animation-fill-color)"
+              />
+            </svg>
+          </button>
+          <button type="button" class="card__like-button">
+            <span class="button__text">Like</span>
+          </button>
+        </div>
+      </article>
+
+      <article class="card">
+        <h2 class="card__title">1 спринт: Я — чистый лист</h2>
+        <div class="card__image-wrapper tag-html">
+          <img
+            src="./images/2.png"
+            alt="Чистый лист"
+            class="card__image image-filter-sepia"
+          />
+        </div>
+        <p class="card__text">
+          <span>
+            На первых этапах мы работали со страхами и сомнениями, которые часто
+            испытывают новички. Один из них — страх перед чистым листом. Это,
+            конечно же, намного сложнее, чем боязнь куска бумаги. Часто за этим
+            ощущением скрываются более глубокие вопросы: с чего начать? а вдруг
+            будет слишком сложно? что, если я не справлюсь?
+          </span>
+          <span>
+            Обучение фронтенд-разработке — это не только погружение в синтаксис
+            и технологии, но и встреча со своими внутренними страхами. В самом
+            начале пути многих новичков настигает ощущение тревоги перед чистым
+            листом — будь то пустой файл HTML или новая тема в учебном плане. На
+            первый взгляд, это просто строка кода, которую нужно заполнить. Но
+            за этим часто скрываются гораздо более глубокие вопросы: с чего
+            начать? а справлюсь ли я? а вдруг это слишком сложно? Эти сомнения
+            знакомы каждому, кто делал первые шаги в программировании. И именно
+            они — часть роста. Постепенно, строчка за строчкой, вы находите в
+            себе силы начать, ошибаться, снова пробовать — и понимаете, что
+            чистый лист больше не страшен. Он становится вашим холстом.
+          </span>
+        </p>
+        <div class="card__footer">
+          <button type="button" class="card__icon-button">
+            <svg
+              width="39"
+              height="36"
+              viewBox="0 0 39 36"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              class="like-icon"
+            >
+              <g class="heart">
+                <path
+                  class="contour"
+                  d="M12 6H9V9H12V6ZM15 6H12V9H15V6ZM9 9H6V12H9V9ZM9 12H6V15H9V12ZM9 15H6V18H9V15ZM18 6H15V9H18V6ZM12 18H9V21H12V18ZM15 21H12V24H15V21ZM18 24H15V27H18V24ZM27 6H30V9H27V6ZM24 6H27V9H24V6ZM30 9H33V12H30V9ZM30 12H33V15H30V12ZM30 15H33V18H30V15ZM21 6H24V9H21V6ZM27 18H30V21H27V18ZM24 21H27V24H24V21ZM21 24H24V27H21V24ZM21 27H18V30H21V27ZM21 9H18V12H21V9Z"
+                  fill="black"
+                />
+                <path
+                  class="main-body"
+                  d="M12 9H9V12H12V9ZM15 12H12V15H15V12ZM18 9H15V12H18V9ZM12 15H9V18H12V15ZM15 15H12V18H15V15ZM15 18H12V21H15V18ZM18 12H15V15H18V12ZM18 21H15V24H18V21ZM18 18H15V21H18V18ZM27 9H30V12H27V9ZM24 9H27V12H24V9ZM27 12H30V15H27V12ZM24 12H27V15H24V12ZM21 9H24V12H21V9ZM27 15H30V18H27V15ZM24 15H27V18H24V15ZM24 18H27V21H24V18ZM21 12H24V15H21V12ZM21 21H24V24H21V21ZM21 18H24V21H21V18ZM21 21H18V24H21V21ZM21 24H18V27H21V24Z"
+                  fill="none"
+                />
+                <path
+                  class="core"
+                  d="M18 15H15V18H18V15ZM21 15H24V18H21V15ZM21 15H18V18H21V15ZM21 12H18V15H21V12ZM21 18H18V21H21V18Z"
+                  fill="none"
+                />
+              </g>
+              <path
+                class="sparks"
+                d="M36 13H39V16H36V13ZM27 27H30V30H27V27ZM18 33H21V36H18V33ZM9 27H12V30H9V27ZM24 0H27V3H24V0ZM33 3H36V6H33V3ZM3 3H6V6H3V3ZM12 0H15V3H12V0ZM0 13H3V16H0V13Z"
+                fill="var(--animation-fill-color)"
+              />
+            </svg>
+          </button>
+          <button type="button" class="card__like-button">
+            <span class="button__text">Like</span>
+          </button>
+        </div>
+      </article>
+
+      <article class="card">
+        <h2 class="card__title">1 спринт: А если не получится?</h2>
+        <div class="card__image-wrapper tag-css">
+          <img
+            src="./images/3.png"
+            alt="Ура конец проекта"
+            class="card__image image-filter-brightness"
+          />
+        </div>
+        <p class="card__text">
+          <span>
+            Первый проект — позади! Но это всё ещё самое начало пути. Радость
+            могла быстро померкнуть и смениться ожиданием провала. Или вы,
+            наоборот, могли вдохновиться успехами и поверить в себя.
+          </span>
+          <span>
+            Обучение фронтенд-разработке — это путь, полный взлётов и падений.
+            Первый проект — позади! Возможно, вы испытали волну радости, когда
+            увидели результат своих усилий на экране. Но эйфория могла быстро
+            смениться тревожным вопросом: «А что дальше?» Сомнения нередко
+            подкрадываются именно в моменты успеха: вдруг повезло? вдруг это был
+            случайный успех? Или, может быть, вы почувствовали настоящий прилив
+            сил и поняли: это то, чем я хочу заниматься! Неважно, каким было
+            ваше состояние после первого проекта — важно, что вы не
+            остановились. Ведь это действительно только начало , и впереди вас
+            ждёт ещё столько открытий, побед и возможностей для роста.
+          </span>
+        </p>
+        <div class="card__footer">
+          <button type="button" class="card__icon-button">
+            <svg
+              width="39"
+              height="36"
+              viewBox="0 0 39 36"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              class="like-icon"
+            >
+              <g class="heart">
+                <path
+                  class="contour"
+                  d="M12 6H9V9H12V6ZM15 6H12V9H15V6ZM9 9H6V12H9V9ZM9 12H6V15H9V12ZM9 15H6V18H9V15ZM18 6H15V9H18V6ZM12 18H9V21H12V18ZM15 21H12V24H15V21ZM18 24H15V27H18V24ZM27 6H30V9H27V6ZM24 6H27V9H24V6ZM30 9H33V12H30V9ZM30 12H33V15H30V12ZM30 15H33V18H30V15ZM21 6H24V9H21V6ZM27 18H30V21H27V18ZM24 21H27V24H24V21ZM21 24H24V27H21V24ZM21 27H18V30H21V27ZM21 9H18V12H21V9Z"
+                  fill="black"
+                />
+                <path
+                  class="main-body"
+                  d="M12 9H9V12H12V9ZM15 12H12V15H15V12ZM18 9H15V12H18V9ZM12 15H9V18H12V15ZM15 15H12V18H15V15ZM15 18H12V21H15V18ZM18 12H15V15H18V12ZM18 21H15V24H18V21ZM18 18H15V21H18V18ZM27 9H30V12H27V9ZM24 9H27V12H24V9ZM27 12H30V15H27V12ZM24 12H27V15H24V12ZM21 9H24V12H21V9ZM27 15H30V18H27V15ZM24 15H27V18H24V15ZM24 18H27V21H24V18ZM21 12H24V15H21V12ZM21 21H24V24H21V21ZM21 18H24V21H21V18ZM21 21H18V24H21V21ZM21 24H18V27H21V24Z"
+                  fill="none"
+                />
+                <path
+                  class="core"
+                  d="M18 15H15V18H18V15ZM21 15H24V18H21V15ZM21 15H18V18H21V15ZM21 12H18V15H21V12ZM21 18H18V21H21V18Z"
+                  fill="none"
+                />
+              </g>
+              <path
+                class="sparks"
+                d="M36 13H39V16H36V13ZM27 27H30V30H27V27ZM18 33H21V36H18V33ZM9 27H12V30H9V27ZM24 0H27V3H24V0ZM33 3H36V6H33V3ZM3 3H6V6H3V3ZM12 0H15V3H12V0ZM0 13H3V16H0V13Z"
+                fill="var(--animation-fill-color)"
+              />
+            </svg>
+          </button>
+          <button type="button" class="card__like-button">
+            <span class="button__text">Like</span>
+          </button>
+        </div>
+      </article>
+
+      <article class="card">
+        <h2 class="card__title">2 спринт: Погоня за идеалом</h2>
+        <div class="card__image-wrapper tag-desigions">
+          <img
+            src="./images/4.png"
+            alt="В работе"
+            class="card__image image-filter-saturate2"
+          />
+        </div>
+        <p class="card__text">
+          <span>
+            На этом этапе вы уже достаточно разбирались в основах вёрстки, чтобы
+            понять, как много ещё впереди. Вы могли попытаться погнаться за
+            идеалом и понять, что он недостижим. А, может, вы вовсе и не
+            подвержены перфекционизму и вместо того, чтобы сделать идеально,
+            старались просто сделать.
+          </span>
+          <span>
+            Обучение фронтенд-разработке — это как открывать дверь за дверью, и
+            каждая следующая ведёт в комнату, полную новых знаний. На этом этапе
+            вы уже чувствовали себя увереннее: освоили базу вёрстки, понимали,
+            как работают элементы на странице, и начинали видеть разницу между
+            «почти правильно» и «по-настоящему красиво». Именно тогда могло
+            прийти осознание: впереди ещё столько всего . И кто-то, быть может,
+            попытался погнаться за идеалом — часами правил одну и ту же кнопку,
+            чтобы всё было точно так , как в макете. А кто-то выбрал другой путь
+            — не стремился к совершенству, а просто делал, шаг за шагом, понимая
+            главное: сначала сделать, потом улучшить . Оба подхода — часть
+            роста. И оба заслуживают воспоминания.
+          </span>
+        </p>
+        <div class="card__footer">
+          <button type="button" class="card__icon-button">
+            <svg
+              width="39"
+              height="36"
+              viewBox="0 0 39 36"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              class="like-icon"
+            >
+              <g class="heart">
+                <path
+                  class="contour"
+                  d="M12 6H9V9H12V6ZM15 6H12V9H15V6ZM9 9H6V12H9V9ZM9 12H6V15H9V12ZM9 15H6V18H9V15ZM18 6H15V9H18V6ZM12 18H9V21H12V18ZM15 21H12V24H15V21ZM18 24H15V27H18V24ZM27 6H30V9H27V6ZM24 6H27V9H24V6ZM30 9H33V12H30V9ZM30 12H33V15H30V12ZM30 15H33V18H30V15ZM21 6H24V9H21V6ZM27 18H30V21H27V18ZM24 21H27V24H24V21ZM21 24H24V27H21V24ZM21 27H18V30H21V27ZM21 9H18V12H21V9Z"
+                  fill="black"
+                />
+                <path
+                  class="main-body"
+                  d="M12 9H9V12H12V9ZM15 12H12V15H15V12ZM18 9H15V12H18V9ZM12 15H9V18H12V15ZM15 15H12V18H15V15ZM15 18H12V21H15V18ZM18 12H15V15H18V12ZM18 21H15V24H18V21ZM18 18H15V21H18V18ZM27 9H30V12H27V9ZM24 9H27V12H24V9ZM27 12H30V15H27V12ZM24 12H27V15H24V12ZM21 9H24V12H21V9ZM27 15H30V18H27V15ZM24 15H27V18H24V15ZM24 18H27V21H24V18ZM21 12H24V15H21V12ZM21 21H24V24H21V21ZM21 18H24V21H21V18ZM21 21H18V24H21V21ZM21 24H18V27H21V24Z"
+                  fill="none"
+                />
+                <path
+                  class="core"
+                  d="M18 15H15V18H18V15ZM21 15H24V18H21V15ZM21 15H18V18H21V15ZM21 12H18V15H21V12ZM21 18H18V21H21V18Z"
+                  fill="none"
+                />
+              </g>
+              <path
+                class="sparks"
+                d="M36 13H39V16H36V13ZM27 27H30V30H27V27ZM18 33H21V36H18V33ZM9 27H12V30H9V27ZM24 0H27V3H24V0ZM33 3H36V6H33V3ZM3 3H6V6H3V3ZM12 0H15V3H12V0ZM0 13H3V16H0V13Z"
+                fill="var(--animation-fill-color)"
+              />
+            </svg>
+          </button>
+          <button type="button" class="card__like-button">
+            <span class="button__text">Like</span>
+          </button>
+        </div>
+      </article>
+
+      <article class="card">
+        <h2 class="card__title">2 спринт: О тех, кто рядом</h2>
+        <div class="card__image-wrapper tag-care">
+          <img
+            src="./images/5.png"
+            alt="Люди у костра"
+            class="card__image image-filter-invert"
+          />
+        </div>
+        <p class="card__text">
+          <span>
+            Всё это время вы были не одиноки (хотя, возможно, иногда и
+            чувствовали, что одни против целого мира). Вас окружали
+            одногруппники, команда сопровождения и просто близкие люди, которым
+            можно пожаловаться, если очередной макет просто так не поддавался.
+            Осваивать что-то новое легче, когда рядом есть единомышленники, не
+            правда ли?
+          </span>
+          <span>
+            Обучение фронтенд-разработке — это путь, который вы проходили не в
+            одиночку. Даже если порой казалось, что весь мир — это вы и
+            неподдающийся flexbox, на самом деле вы всегда были окружены
+            поддержкой. Рядом были одногруппники , с которыми делились
+            лайфхаками и переживаниями, команда сопровождения, которая помогала
+            разобраться даже в самых запутанных багах, и, конечно же, близкие
+            люди , готовые выслушать, когда очередной макет отказывался
+            верстаться правильно. Осваивать новое всегда легче, когда есть с кем
+            разделить трудности и победы. Ведь именно благодаря этим людям путь
+            от первых строк кода до первого проекта стал не просто обучением — а
+            настоящей командной историей успеха.
+          </span>
+        </p>
+        <div class="card__footer">
+          <button type="button" class="card__icon-button">
+            <svg
+              width="39"
+              height="36"
+              viewBox="0 0 39 36"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              class="like-icon"
+            >
+              <g class="heart">
+                <path
+                  class="contour"
+                  d="M12 6H9V9H12V6ZM15 6H12V9H15V6ZM9 9H6V12H9V9ZM9 12H6V15H9V12ZM9 15H6V18H9V15ZM18 6H15V9H18V6ZM12 18H9V21H12V18ZM15 21H12V24H15V21ZM18 24H15V27H18V24ZM27 6H30V9H27V6ZM24 6H27V9H24V6ZM30 9H33V12H30V9ZM30 12H33V15H30V12ZM30 15H33V18H30V15ZM21 6H24V9H21V6ZM27 18H30V21H27V18ZM24 21H27V24H24V21ZM21 24H24V27H21V24ZM21 27H18V30H21V27ZM21 9H18V12H21V9Z"
+                  fill="black"
+                />
+                <path
+                  class="main-body"
+                  d="M12 9H9V12H12V9ZM15 12H12V15H15V12ZM18 9H15V12H18V9ZM12 15H9V18H12V15ZM15 15H12V18H15V15ZM15 18H12V21H15V18ZM18 12H15V15H18V12ZM18 21H15V24H18V21ZM18 18H15V21H18V18ZM27 9H30V12H27V9ZM24 9H27V12H24V9ZM27 12H30V15H27V12ZM24 12H27V15H24V12ZM21 9H24V12H21V9ZM27 15H30V18H27V15ZM24 15H27V18H24V15ZM24 18H27V21H24V18ZM21 12H24V15H21V12ZM21 21H24V24H21V21ZM21 18H24V21H21V18ZM21 21H18V24H21V21ZM21 24H18V27H21V24Z"
+                  fill="none"
+                />
+                <path
+                  class="core"
+                  d="M18 15H15V18H18V15ZM21 15H24V18H21V15ZM21 15H18V18H21V15ZM21 12H18V15H21V12ZM21 18H18V21H21V18Z"
+                  fill="none"
+                />
+              </g>
+              <path
+                class="sparks"
+                d="M36 13H39V16H36V13ZM27 27H30V30H27V27ZM18 33H21V36H18V33ZM9 27H12V30H9V27ZM24 0H27V3H24V0ZM33 3H36V6H33V3ZM3 3H6V6H3V3ZM12 0H15V3H12V0ZM0 13H3V16H0V13Z"
+                fill="var(--animation-fill-color)"
+              />
+            </svg>
+          </button>
+          <button type="button" class="card__like-button">
+            <span class="button__text">Like</span>
+          </button>
+        </div>
+      </article>
+
+      <article class="card">
+        <h2 class="card__title">3 спринт: Обходные стратегии</h2>
+        <div class="card__image-wrapper tag-support">
+          <img
+            src="./images/6.png"
+            alt="Уставший программист"
+            class="card__image image-filter-gray"
+          />
+        </div>
+        <p class="card__text">
+          <span>
+            На этом курсе вы постоянно решали разные задачи. В какой-то момент
+            вам могло показаться, что решения просто иссякли. Значит, пришло
+            время посмотреть на задачу под другим углом.
+          </span>
+          <span>
+            Обучение фронтенд-разработке — это постоянное движение вперёд,
+            наполненное задачами самых разных уровней сложности. На этом курсе
+            вы неоднократно сталкивались с ситуациями, когда решение казалось
+            недостижимым: код не работал, как задумано, логика ускользала, а
+            мысли путались. Бывали моменты, когда вам, возможно, казалось, что
+            все варианты исчерпаны , что вы уже ничего нового не придумаете. Но
+            именно в такие минуты наступал важный поворот — вы учились смотреть
+            на задачу под другим углом . Спрашивали совета, перечитывали
+            документацию или просто делали паузу, чтобы начать с чистого листа.
+            И каждый раз находили выход. Потому что настоящий разработчик — это
+            не тот, кто знает всё, а тот, кто умеет искать новое решение.
+          </span>
+        </p>
+        <div class="card__footer">
+          <button type="button" class="card__icon-button">
+            <svg
+              width="39"
+              height="36"
+              viewBox="0 0 39 36"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              class="like-icon"
+            >
+              <g class="heart">
+                <path
+                  class="contour"
+                  d="M12 6H9V9H12V6ZM15 6H12V9H15V6ZM9 9H6V12H9V9ZM9 12H6V15H9V12ZM9 15H6V18H9V15ZM18 6H15V9H18V6ZM12 18H9V21H12V18ZM15 21H12V24H15V21ZM18 24H15V27H18V24ZM27 6H30V9H27V6ZM24 6H27V9H24V6ZM30 9H33V12H30V9ZM30 12H33V15H30V12ZM30 15H33V18H30V15ZM21 6H24V9H21V6ZM27 18H30V21H27V18ZM24 21H27V24H24V21ZM21 24H24V27H21V24ZM21 27H18V30H21V27ZM21 9H18V12H21V9Z"
+                  fill="black"
+                />
+                <path
+                  class="main-body"
+                  d="M12 9H9V12H12V9ZM15 12H12V15H15V12ZM18 9H15V12H18V9ZM12 15H9V18H12V15ZM15 15H12V18H15V15ZM15 18H12V21H15V18ZM18 12H15V15H18V12ZM18 21H15V24H18V21ZM18 18H15V21H18V18ZM27 9H30V12H27V9ZM24 9H27V12H24V9ZM27 12H30V15H27V12ZM24 12H27V15H24V12ZM21 9H24V12H21V9ZM27 15H30V18H27V15ZM24 15H27V18H24V15ZM24 18H27V21H24V18ZM21 12H24V15H21V12ZM21 21H24V24H21V21ZM21 18H24V21H21V18ZM21 21H18V24H21V21ZM21 24H18V27H21V24Z"
+                  fill="none"
+                />
+                <path
+                  class="core"
+                  d="M18 15H15V18H18V15ZM21 15H24V18H21V15ZM21 15H18V18H21V15ZM21 12H18V15H21V12ZM21 18H18V21H21V18Z"
+                  fill="none"
+                />
+              </g>
+              <path
+                class="sparks"
+                d="M36 13H39V16H36V13ZM27 27H30V30H27V27ZM18 33H21V36H18V33ZM9 27H12V30H9V27ZM24 0H27V3H24V0ZM33 3H36V6H33V3ZM3 3H6V6H3V3ZM12 0H15V3H12V0ZM0 13H3V16H0V13Z"
+                fill="var(--animation-fill-color)"
+              />
+            </svg>
+          </button>
+          <button type="button" class="card__like-button">
+            <span class="button__text">Like</span>
+          </button>
+        </div>
+      </article>
+
+      <article class="card">
+        <h2 class="card__title">3 спринт: Когда опускаются руки</h2>
+        <div class="card__image-wrapper tag-lifes">
+          <img
+            src="./images/7.png"
+            alt="Человек окруженный идеями"
+            class="card__image image-filter-blur"
+          />
+        </div>
+        <p class="card__text">
+          <span>
+            Во время учёбы часто возникает чувство, когда не знаешь, за что
+            хвататься. Вроде и проектную пора сдавать, и задачи хочется
+            порешать, и в теории получше разобраться, и жизнь не забыть пожить.
+            В такие моменты очень нужна концентрация. Вспомните, откуда вы её
+            черпали.
+          </span>
+          <span>
+            Обучение фронтенд-разработке — это не только изучение языков и
+            технологий, но и постоянная борьба с внутренним хаосом. Бывали
+            моменты, когда вы чувствовали: времени в обрез, задач слишком много,
+            а голова будто отказывается выбирать, за что взяться в первую
+            очередь. Проект пора сдавать, нужно разобраться с новой темой,
+            решить пару задачек «на закрепление», да ещё и оставить время на
+            отдых, ведь без этого никуда. В такие дни особенно остро понимаешь
+            ценность концентрации — того самого внутреннего ресурса, который
+            помогает собраться, сделать глубокий вдох и двигаться дальше. Откуда
+            бы вы её ни черпали — через музыку, тишину, поддержку близких или
+            просто чашку чая в утренней тишине — эти моменты собранности стали
+            вашей опорой. И сейчас, оглядываясь назад, вы видите: даже в самый
+            беспокойный день вы находили силы сосредоточиться и сделать шаг
+            вперёд.
+          </span>
+        </p>
+        <div class="card__footer">
+          <button type="button" class="card__icon-button">
+            <svg
+              width="39"
+              height="36"
+              viewBox="0 0 39 36"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              class="like-icon"
+            >
+              <g class="heart">
+                <path
+                  class="contour"
+                  d="M12 6H9V9H12V6ZM15 6H12V9H15V6ZM9 9H6V12H9V9ZM9 12H6V15H9V12ZM9 15H6V18H9V15ZM18 6H15V9H18V6ZM12 18H9V21H12V18ZM15 21H12V24H15V21ZM18 24H15V27H18V24ZM27 6H30V9H27V6ZM24 6H27V9H24V6ZM30 9H33V12H30V9ZM30 12H33V15H30V12ZM30 15H33V18H30V15ZM21 6H24V9H21V6ZM27 18H30V21H27V18ZM24 21H27V24H24V21ZM21 24H24V27H21V24ZM21 27H18V30H21V27ZM21 9H18V12H21V9Z"
+                  fill="black"
+                />
+                <path
+                  class="main-body"
+                  d="M12 9H9V12H12V9ZM15 12H12V15H15V12ZM18 9H15V12H18V9ZM12 15H9V18H12V15ZM15 15H12V18H15V15ZM15 18H12V21H15V18ZM18 12H15V15H18V12ZM18 21H15V24H18V21ZM18 18H15V21H18V18ZM27 9H30V12H27V9ZM24 9H27V12H24V9ZM27 12H30V15H27V12ZM24 12H27V15H24V12ZM21 9H24V12H21V9ZM27 15H30V18H27V15ZM24 15H27V18H24V15ZM24 18H27V21H24V18ZM21 12H24V15H21V12ZM21 21H24V24H21V21ZM21 18H24V21H21V18ZM21 21H18V24H21V21ZM21 24H18V27H21V24Z"
+                  fill="none"
+                />
+                <path
+                  class="core"
+                  d="M18 15H15V18H18V15ZM21 15H24V18H21V15ZM21 15H18V18H21V15ZM21 12H18V15H21V12ZM21 18H18V21H21V18Z"
+                  fill="none"
+                />
+              </g>
+              <path
+                class="sparks"
+                d="M36 13H39V16H36V13ZM27 27H30V30H27V27ZM18 33H21V36H18V33ZM9 27H12V30H9V27ZM24 0H27V3H24V0ZM33 3H36V6H33V3ZM3 3H6V6H3V3ZM12 0H15V3H12V0ZM0 13H3V16H0V13Z"
+                fill="var(--animation-fill-color)"
+              />
+            </svg>
+          </button>
+          <button type="button" class="card__like-button">
+            <span class="button__text">Like</span>
+          </button>
+        </div>
+      </article>
+
+      <article class="card">
+        <h2 class="card__title">«Сейчас я здесь»</h2>
+        <div class="card__image-wrapper tag-experience">
+          <img
+            src="./images/8.png"
+            alt="Программист на распутье"
+            class="card__image image-filter-saturate"
+          />
+        </div>
+        <p class="card__text">
+          <span>
+            Сейчас вы уже очень много знаете о вёрстке. Но это только начало.
+            Во-первых, впереди ещё много материала про «красотищу». Во-вторых, с
+            окончанием курса учёба не заканчивается. Вёрстка — это целый мир. И
+            этот мир постоянно меняется. Познать его полностью не получится, но
+            это тот случай, когда важен сам процесс познания. Ведь часто путь —
+            и есть результат.
+          </span>
+          <span>
+            Обучение фронтенд-разработке — это путь, на котором каждый шаг
+            приближает вас к новому пониманию. Сейчас вы уже умеете много:
+            знаете, как устроены элементы на странице, как добиться идеального
+            отступа и заставить макет выглядеть одинаково во всех браузерах. Вы
+            освоили основы вёрстки — но это лишь вершина айсберга . Впереди вас
+            ждёт ещё больше возможностей для создания красивого и
+            функционального интерфейса — там, где начинается настоящая
+            «красотища» . А главное — вы теперь понимаете: учёба не
+            заканчивается с последним уроком. Вёрстка — это живой, динамично
+            развивающийся мир, в котором всегда найдётся что-то новое. И пусть
+            познать его целиком невозможно — разве не в этом его прелесть? Ведь
+            часто именно путь , а не только результат, делает нас теми, кем мы
+            становимся.
+          </span>
+        </p>
+        <div class="card__footer">
+          <button type="button" class="card__icon-button">
+            <svg
+              width="39"
+              height="36"
+              viewBox="0 0 39 36"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              class="like-icon"
+            >
+              <g class="heart">
+                <path
+                  class="contour"
+                  d="M12 6H9V9H12V6ZM15 6H12V9H15V6ZM9 9H6V12H9V9ZM9 12H6V15H9V12ZM9 15H6V18H9V15ZM18 6H15V9H18V6ZM12 18H9V21H12V18ZM15 21H12V24H15V21ZM18 24H15V27H18V24ZM27 6H30V9H27V6ZM24 6H27V9H24V6ZM30 9H33V12H30V9ZM30 12H33V15H30V12ZM30 15H33V18H30V15ZM21 6H24V9H21V6ZM27 18H30V21H27V18ZM24 21H27V24H24V21ZM21 24H24V27H21V24ZM21 27H18V30H21V27ZM21 9H18V12H21V9Z"
+                  fill="black"
+                />
+                <path
+                  class="main-body"
+                  d="M12 9H9V12H12V9ZM15 12H12V15H15V12ZM18 9H15V12H18V9ZM12 15H9V18H12V15ZM15 15H12V18H15V15ZM15 18H12V21H15V18ZM18 12H15V15H18V12ZM18 21H15V24H18V21ZM18 18H15V21H18V18ZM27 9H30V12H27V9ZM24 9H27V12H24V9ZM27 12H30V15H27V12ZM24 12H27V15H24V12ZM21 9H24V12H21V9ZM27 15H30V18H27V15ZM24 15H27V18H24V15ZM24 18H27V21H24V18ZM21 12H24V15H21V12ZM21 21H24V24H21V21ZM21 18H24V21H21V18ZM21 21H18V24H21V21ZM21 24H18V27H21V24Z"
+                  fill="none"
+                />
+                <path
+                  class="core"
+                  d="M18 15H15V18H18V15ZM21 15H24V18H21V15ZM21 15H18V18H21V15ZM21 12H18V15H21V12ZM21 18H18V21H21V18Z"
+                  fill="none"
+                />
+              </g>
+              <path
+                class="sparks"
+                d="M36 13H39V16H36V13ZM27 27H30V30H27V27ZM18 33H21V36H18V33ZM9 27H12V30H9V27ZM24 0H27V3H24V0ZM33 3H36V6H33V3ZM3 3H6V6H3V3ZM12 0H15V3H12V0ZM0 13H3V16H0V13Z"
+                fill="var(--animation-fill-color)"
+              />
+            </svg>
+          </button>
+          <button type="button" class="card__like-button">
+            <span class="button__text">Like</span>
+          </button>
+        </div>
+      </article>
+    </main>
+    <footer class="footer">
+      <button type="button" class="footer__button" onclick="window['dialog'].showModal()">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 39 39"
+          width="28"
+          height="28"
+        >
+          <use href="./svg/icons.svg#diskette"></use>
+        </svg>
+        <span class="button__text">
+          Сохранить на память
+        </span>
+      </button>
+    </footer>
+    <dialog class="dialog" id="dialog">
+      <div class="dialog__container">
+        <div class="dialog__text">
+          <div class="dialog__icon">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 39 39"
+              width="39"
+              height="39"
+            >
+              <use href="./svg/icons.svg#diskette"></use>
+            </svg>
+          </div>
+          <span> Вставьте дискету,&nbsp;чтобы продолжить </span>
+        </div>
+        <button
+          class="dialog__button"
+          type="button"
+          onclick="window['dialog'].close()"
+        >
+          <span class="button__text">
+            OK
+          </span>
+        </button>
+      </div>
+    </dialog>
     <script src="./scripts/like.js"></script>
   </body>
 </html>
