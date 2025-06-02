@@ -1,41 +1,41 @@
 <!doctype html>
 <html lang="ru">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Закрывающий тег</title>
-    <link rel="stylesheet" href="./fonts/fonts.css" />
-    <link rel="stylesheet" href="./styles/variables.css" />
-    <link rel="stylesheet" href="./styles/globals.css" />
-    <link rel="stylesheet" href="./styles/style.css" />
-    <link rel="stylesheet" href="./styles/animations.css" />
+    <link rel="stylesheet" href="./fonts/fonts.css">
+    <link rel="stylesheet" href="./styles/variables.css">
+    <link rel="stylesheet" href="./styles/globals.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/animations.css">
     <link
       rel="icon"
       type="image/png"
       sizes="16x16"
       href="./favicon-16x16.png"
-    />
+   >
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
       href="./favicon-32x32.png"
-    />
-    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
-    <link rel="apple-touch-icon" href="./apple-touch-icon.png" />
+   >
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="./apple-touch-icon.png">
     <link
       rel="icon"
       type="image/png"
       sizes="192x192"
       href="./android-chrome-192x192.png"
-    />
+   >
     <link
       rel="icon"
       type="image/png"
       sizes="512x512"
       href="./android-chrome-512x512.png"
-    />
-    <link rel="manifest" href="./site.webmanifest" />
+   >
+    <link rel="manifest" href="./site.webmanifest">
   </head>
   <body class="page">
     <header class="header">
@@ -49,20 +49,21 @@
         <h2 class="card__title">
           Фритрек и нулевой спринт: Подготовка к работе
         </h2>
-        <div class="card__image-wrapper tag-html">
+        <div class="card__image-wrapper">
           <img
             src="./images/1.png"
             alt="Начало пути"
             class="card__image image-filter-few"
-          />
+         >
+          <div class="card__label">&lt;/HTML&gt;</div>
         </div>
-        <p class="card__text">
-          <span>
+        <div class="card__text">
+          <p>
             Это было самое начало пути. На этом этапе важно было проникнуться
             основами и настроиться на учёбу. И, возможно, подумать, как новые
             знания могут повлиять на ваше будущее.
-          </span>
-          <span>
+          </p>
+          <p>
             Обучение фронтенд-разработке — это не просто освоение HTML, CSS и
             JavaScript. Это целое путешествие, наполненное первыми успехами,
             небольшими паническими моментами и множеством "ага!" внутри головы.
@@ -73,8 +74,8 @@
             мечты. Это ваш цифровой альбом воспоминаний — смелее рассказывайте,
             как делали первый коммит, как верстали первую страницу и что пошло
             не так (или даже как пошло таки правильно).
-          </span>
-        </p>
+          </p>
+        </div>
         <div class="card__footer">
           <button type="button" class="card__icon-button">
             <svg
@@ -84,6 +85,7 @@
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
               class="like-icon"
+              aria-hidden="true"
             >
               <g class="heart">
                 <path
@@ -117,22 +119,23 @@
 
       <article class="card">
         <h2 class="card__title">1 спринт: Я — чистый лист</h2>
-        <div class="card__image-wrapper tag-html">
+        <div class="card__image-wrapper">
           <img
             src="./images/2.png"
             alt="Чистый лист"
             class="card__image image-filter-sepia"
-          />
+         >
+          <div class="card__label">&lt;/HTML&gt;</div>
         </div>
-        <p class="card__text">
-          <span>
+        <div class="card__text">
+          <p>
             На первых этапах мы работали со страхами и сомнениями, которые часто
             испытывают новички. Один из них — страх перед чистым листом. Это,
             конечно же, намного сложнее, чем боязнь куска бумаги. Часто за этим
             ощущением скрываются более глубокие вопросы: с чего начать? а вдруг
             будет слишком сложно? что, если я не справлюсь?
-          </span>
-          <span>
+          </p>
+          <p>
             Обучение фронтенд-разработке — это не только погружение в синтаксис
             и технологии, но и встреча со своими внутренними страхами. В самом
             начале пути многих новичков настигает ощущение тревоги перед чистым
@@ -144,8 +147,8 @@
             они — часть роста. Постепенно, строчка за строчкой, вы находите в
             себе силы начать, ошибаться, снова пробовать — и понимаете, что
             чистый лист больше не страшен. Он становится вашим холстом.
-          </span>
-        </p>
+          </p>
+        </div>
         <div class="card__footer">
           <button type="button" class="card__icon-button">
             <svg
@@ -155,6 +158,7 @@
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
               class="like-icon"
+              aria-hidden="true"
             >
               <g class="heart">
                 <path
@@ -188,20 +192,21 @@
 
       <article class="card">
         <h2 class="card__title">1 спринт: А если не получится?</h2>
-        <div class="card__image-wrapper tag-css">
+        <div class="card__image-wrapper">
           <img
             src="./images/3.png"
             alt="Ура конец проекта"
             class="card__image image-filter-brightness"
-          />
+         >
+          <div class="card__label">&lt;css&gt;</div>
         </div>
-        <p class="card__text">
-          <span>
+        <div class="card__text">
+          <p>
             Первый проект — позади! Но это всё ещё самое начало пути. Радость
             могла быстро померкнуть и смениться ожиданием провала. Или вы,
             наоборот, могли вдохновиться успехами и поверить в себя.
-          </span>
-          <span>
+          </p>
+          <p>
             Обучение фронтенд-разработке — это путь, полный взлётов и падений.
             Первый проект — позади! Возможно, вы испытали волну радости, когда
             увидели результат своих усилий на экране. Но эйфория могла быстро
@@ -212,8 +217,8 @@
             ваше состояние после первого проекта — важно, что вы не
             остановились. Ведь это действительно только начало , и впереди вас
             ждёт ещё столько открытий, побед и возможностей для роста.
-          </span>
-        </p>
+          </p>
+        </div>
         <div class="card__footer">
           <button type="button" class="card__icon-button">
             <svg
@@ -223,6 +228,7 @@
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
               class="like-icon"
+              aria-hidden="true"
             >
               <g class="heart">
                 <path
@@ -256,22 +262,23 @@
 
       <article class="card">
         <h2 class="card__title">2 спринт: Погоня за идеалом</h2>
-        <div class="card__image-wrapper tag-desigions">
+        <div class="card__image-wrapper">
           <img
             src="./images/4.png"
             alt="В работе"
             class="card__image image-filter-saturate2"
-          />
+         >
+          <div class="card__label">&lt;desigions&gt;</div>
         </div>
-        <p class="card__text">
-          <span>
+        <div class="card__text">
+          <p>
             На этом этапе вы уже достаточно разбирались в основах вёрстки, чтобы
             понять, как много ещё впереди. Вы могли попытаться погнаться за
             идеалом и понять, что он недостижим. А, может, вы вовсе и не
             подвержены перфекционизму и вместо того, чтобы сделать идеально,
             старались просто сделать.
-          </span>
-          <span>
+          </p>
+          <p>
             Обучение фронтенд-разработке — это как открывать дверь за дверью, и
             каждая следующая ведёт в комнату, полную новых знаний. На этом этапе
             вы уже чувствовали себя увереннее: освоили базу вёрстки, понимали,
@@ -283,8 +290,8 @@
             — не стремился к совершенству, а просто делал, шаг за шагом, понимая
             главное: сначала сделать, потом улучшить . Оба подхода — часть
             роста. И оба заслуживают воспоминания.
-          </span>
-        </p>
+          </p>
+        </div>
         <div class="card__footer">
           <button type="button" class="card__icon-button">
             <svg
@@ -294,6 +301,7 @@
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
               class="like-icon"
+              aria-hidden="true"
             >
               <g class="heart">
                 <path
@@ -327,23 +335,24 @@
 
       <article class="card">
         <h2 class="card__title">2 спринт: О тех, кто рядом</h2>
-        <div class="card__image-wrapper tag-care">
+        <div class="card__image-wrapper">
           <img
             src="./images/5.png"
             alt="Люди у костра"
             class="card__image image-filter-invert"
-          />
+         >
+          <div class="card__label">care</div>
         </div>
-        <p class="card__text">
-          <span>
+        <div class="card__text">
+          <p>
             Всё это время вы были не одиноки (хотя, возможно, иногда и
             чувствовали, что одни против целого мира). Вас окружали
             одногруппники, команда сопровождения и просто близкие люди, которым
             можно пожаловаться, если очередной макет просто так не поддавался.
             Осваивать что-то новое легче, когда рядом есть единомышленники, не
             правда ли?
-          </span>
-          <span>
+          </p>
+          <p>
             Обучение фронтенд-разработке — это путь, который вы проходили не в
             одиночку. Даже если порой казалось, что весь мир — это вы и
             неподдающийся flexbox, на самом деле вы всегда были окружены
@@ -355,8 +364,8 @@
             разделить трудности и победы. Ведь именно благодаря этим людям путь
             от первых строк кода до первого проекта стал не просто обучением — а
             настоящей командной историей успеха.
-          </span>
-        </p>
+          </p>
+        </div>
         <div class="card__footer">
           <button type="button" class="card__icon-button">
             <svg
@@ -366,6 +375,7 @@
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
               class="like-icon"
+              aria-hidden="true"
             >
               <g class="heart">
                 <path
@@ -399,20 +409,21 @@
 
       <article class="card">
         <h2 class="card__title">3 спринт: Обходные стратегии</h2>
-        <div class="card__image-wrapper tag-support">
+        <div class="card__image-wrapper">
           <img
             src="./images/6.png"
             alt="Уставший программист"
             class="card__image image-filter-gray"
-          />
+         >
+          <div class="card__label">&lt;support&gt;</div>
         </div>
-        <p class="card__text">
-          <span>
+        <div class="card__text">
+          <p>
             На этом курсе вы постоянно решали разные задачи. В какой-то момент
             вам могло показаться, что решения просто иссякли. Значит, пришло
             время посмотреть на задачу под другим углом.
-          </span>
-          <span>
+          </p>
+          <p>
             Обучение фронтенд-разработке — это постоянное движение вперёд,
             наполненное задачами самых разных уровней сложности. На этом курсе
             вы неоднократно сталкивались с ситуациями, когда решение казалось
@@ -424,8 +435,8 @@
             документацию или просто делали паузу, чтобы начать с чистого листа.
             И каждый раз находили выход. Потому что настоящий разработчик — это
             не тот, кто знает всё, а тот, кто умеет искать новое решение.
-          </span>
-        </p>
+          </p>
+        </div>
         <div class="card__footer">
           <button type="button" class="card__icon-button">
             <svg
@@ -435,6 +446,7 @@
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
               class="like-icon"
+              aria-hidden="true"
             >
               <g class="heart">
                 <path
@@ -468,22 +480,23 @@
 
       <article class="card">
         <h2 class="card__title">3 спринт: Когда опускаются руки</h2>
-        <div class="card__image-wrapper tag-lifes">
+        <div class="card__image-wrapper">
           <img
             src="./images/7.png"
             alt="Человек окруженный идеями"
             class="card__image image-filter-blur"
-          />
+         >
+          <div class="card__label">&lt;-style: none;&gt;</div>
         </div>
-        <p class="card__text">
-          <span>
+        <div class="card__text">
+          <p>
             Во время учёбы часто возникает чувство, когда не знаешь, за что
             хвататься. Вроде и проектную пора сдавать, и задачи хочется
             порешать, и в теории получше разобраться, и жизнь не забыть пожить.
             В такие моменты очень нужна концентрация. Вспомните, откуда вы её
             черпали.
-          </span>
-          <span>
+          </p>
+          <p>
             Обучение фронтенд-разработке — это не только изучение языков и
             технологий, но и постоянная борьба с внутренним хаосом. Бывали
             моменты, когда вы чувствовали: времени в обрез, задач слишком много,
@@ -498,8 +511,8 @@
             вашей опорой. И сейчас, оглядываясь назад, вы видите: даже в самый
             беспокойный день вы находили силы сосредоточиться и сделать шаг
             вперёд.
-          </span>
-        </p>
+          </p>
+        </div>
         <div class="card__footer">
           <button type="button" class="card__icon-button">
             <svg
@@ -509,6 +522,7 @@
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
               class="like-icon"
+              aria-hidden="true"
             >
               <g class="heart">
                 <path
@@ -547,18 +561,19 @@
             src="./images/8.png"
             alt="Программист на распутье"
             class="card__image image-filter-saturate"
-          />
+          >
+          <div class="card__label">&lt;experience&gt;</div>
         </div>
-        <p class="card__text">
-          <span>
+        <div class="card__text">
+          <p>
             Сейчас вы уже очень много знаете о вёрстке. Но это только начало.
             Во-первых, впереди ещё много материала про «красотищу». Во-вторых, с
             окончанием курса учёба не заканчивается. Вёрстка — это целый мир. И
             этот мир постоянно меняется. Познать его полностью не получится, но
             это тот случай, когда важен сам процесс познания. Ведь часто путь —
             и есть результат.
-          </span>
-          <span>
+          </p>
+          <p>
             Обучение фронтенд-разработке — это путь, на котором каждый шаг
             приближает вас к новому пониманию. Сейчас вы уже умеете много:
             знаете, как устроены элементы на странице, как добиться идеального
@@ -572,8 +587,8 @@
             познать его целиком невозможно — разве не в этом его прелесть? Ведь
             часто именно путь , а не только результат, делает нас теми, кем мы
             становимся.
-          </span>
-        </p>
+          </p>
+        </div>
         <div class="card__footer">
           <button type="button" class="card__icon-button">
             <svg
@@ -583,6 +598,7 @@
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
               class="like-icon"
+              aria-hidden="true"
             >
               <g class="heart">
                 <path
@@ -613,22 +629,22 @@
           </button>
         </div>
       </article>
+      <div class="button__container">
+        <button type="button" class="bottom__button" onclick="window['dialog'].showModal()">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 39 39"
+            width="28"
+            height="28"
+          >
+            <use href="./svg/icons.svg#diskette"></use>
+          </svg>
+          <span class="button__text">
+            Сохранить на память
+          </span>
+        </button>
+      </div>
     </main>
-    <footer class="footer">
-      <button type="button" class="footer__button" onclick="window['dialog'].showModal()">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 39 39"
-          width="28"
-          height="28"
-        >
-          <use href="./svg/icons.svg#diskette"></use>
-        </svg>
-        <span class="button__text">
-          Сохранить на память
-        </span>
-      </button>
-    </footer>
     <dialog class="dialog" id="dialog">
       <div class="dialog__container">
         <div class="dialog__text">
@@ -642,7 +658,7 @@
               <use href="./svg/icons.svg#diskette"></use>
             </svg>
           </div>
-          <span> Вставьте дискету,&nbsp;чтобы продолжить </span>
+          <p>Вставьте дискету,&nbsp;чтобы продолжить</p>
         </div>
         <button
           class="dialog__button"

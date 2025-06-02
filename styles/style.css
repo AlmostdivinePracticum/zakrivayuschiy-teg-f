@@ -10,35 +10,12 @@
 
 */
 
-@keyframes heart {
-
-  from {
-    transform: scale(1);
-  }
-
-  to {
-    transform: scale(1.25);
-  }
-}
-
-@keyframes sparkles {
-
-  from {
-    opacity: 1;
-  }
-
-  to {
-    opacity: 0;
-  }
-}
-
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
   font-family: var(--font-main);
   font-variation-settings: 'wght' var(--font-text-weight);
-  background-image:
-    var(--background-image),
+  background-image: var(--background-image),
     repeating-linear-gradient(
       to right,
       #d3d3d3 0,
@@ -59,7 +36,7 @@
 
 .header {
   display: flex;
-  padding: 102px 0 99px;
+  padding: 100px 0;
   justify-content: center;
 }
 
@@ -78,11 +55,11 @@
 }
 
 .banner__title {
-  font-family: 'Press Start 2P';
+  font-family: var(--font-accent);
   font-style: normal;
   font-weight: var(--font-text-weight);
   font-size: clamp(49px, 1.5vw + 43.4px, 65px);
-  line-height: 1;
+  line-height: normal;
 }
 
 .banner__text {
@@ -104,17 +81,16 @@
 
 .card {
   background-color: var(--background-color);
-  border: 1px solid var(--main-color);
+  border: 2px solid var(--main-color);
   max-inline-size: clamp(375px, 30.52vw + 260.55px, 700px);
 }
 
 .card__title {
   padding: 4px 10px 6px;
-  font-family: var(--font-main);
   font-style: normal;
   font-variation-settings: 'wght' var(--font-title-weight);
   font-size: 18px;
-  line-height: 1.22;
+  line-height: normal;
   color: var(--main-color);
 }
 
@@ -124,7 +100,7 @@
   border-block-end: 2px solid var(--main-color);
 }
 
-.card__image-wrapper::after {
+.card__label {
   display: block;
   position: absolute;
   top: 25px;
@@ -147,39 +123,11 @@
 @supports (text-stroke: 1px var(--main-color)) or
   (-webkit-text-stroke: 1px var(--main-color)) {
 
-  .card__image-wrapper::after {
+  .card__label {
     -webkit-text-stroke: 1px var(--main-color);
     text-stroke: 1px var(--main-color);
     text-shadow: none;
   }
-}
-
-.card__image-wrapper.tag-html::after {
-  content: '</HTML>';
-}
-
-.card__image-wrapper.tag-css::after {
-  content: '<css>';
-}
-
-.card__image-wrapper.tag-desigions::after {
-  content: '<desigions>';
-}
-
-.card__image-wrapper.tag-care::after {
-  content: 'care';
-}
-
-.card__image-wrapper.tag-support::after {
-  content: '<support>';
-}
-
-.card__image-wrapper.tag-lifes::after {
-  content: '<-style: none;>';
-}
-
-.card__image-wrapper.tag-experience::after {
-  content: '<experience>';
 }
 
 .card__image {
@@ -223,7 +171,7 @@
 }
 
 .card__text {
-  padding: 21px 25px 27px;
+  padding: 23px 25px 27px;
   display: flex;
   flex-direction: column;
   gap: 27px;
@@ -236,7 +184,7 @@
   padding: 0 25px 25px;
   justify-content: end;
   align-items: center;
-  gap: 7px;
+  gap: 6px;
 }
 
 .card__like-button {
@@ -264,13 +212,13 @@
   outline: 2px solid var(--main-color);
 }
 
-.footer {
+.button__container {
   display: flex;
   justify-content: center;
   padding: 52px 0 102px;
 }
 
-.footer__button {
+.bottom__button {
   padding: 15px 20px;
   display: flex;
   align-items: center;
@@ -280,7 +228,7 @@
   line-height: 0.9;
 }
 
-.footer__button svg {
+.bottom__button svg {
   block-size: 28px;
   inline-size: 28px;
 }
@@ -288,7 +236,7 @@
 .core {
   fill: none;
   transition: fill 0.3s ease;
-  transition-delay: 0s;
+  transition-delay: 0.03s;
 }
 
 .main-body {
@@ -369,6 +317,7 @@
 }
 
 dialog.dialog {
+  padding: 0;
   position: fixed;
   inline-size: 353px;
 }
@@ -479,16 +428,24 @@ button:not(.card__icon-button):hover svg {
     width: 100vw;
   }
 
-  .card__image-wrapper::after {
+  .card__label {
     right: 13px;
   }
 
-  .footer {
+  .button__container {
     padding: 52px 34px 100px;
   }
 
-  .footer__button {
+  .bottom__button {
     flex-direction: column;
     white-space: nowrap;
+  }
+
+  dialog.dialog {
+    inline-size: 341px;
+  }
+
+  dialog.dialog .dialog__container {
+    padding: 30px 42px;
   }
 }
