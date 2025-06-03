@@ -15,7 +15,8 @@
   min-block-size: 100dvb;
   font-family: var(--font-main);
   font-variation-settings: 'wght' var(--font-text-weight);
-  background-image: var(--background-image),
+  background-image:
+    var(--background-image),
     repeating-linear-gradient(
       to right,
       #d3d3d3 0,
@@ -30,7 +31,12 @@
       transparent 2px,
       transparent 4px
     ),
-    linear-gradient(to bottom, #e7e7e7 0%, #e7e7e7 0.01%, #1a1a1a 100%);
+    linear-gradient(
+      to bottom,
+      #e7e7e7 0%,
+      #e7e7e7 0.01%,
+      #1a1a1a 100%
+    );
   background-attachment: fixed;
 }
 
@@ -215,7 +221,7 @@
 .button__container {
   display: flex;
   justify-content: center;
-  padding: 52px 0 102px;
+  padding: 2px 0 103px;
 }
 
 .bottom__button {
@@ -233,16 +239,8 @@
   inline-size: 28px;
 }
 
-.core {
+.core, .main-body {
   fill: none;
-  transition: fill 0.3s ease;
-  transition-delay: 0.03s;
-}
-
-.main-body {
-  fill: none;
-  transition: fill 0.3s ease;
-  transition-delay: 0.05s;
 }
 
 .sparks {
@@ -251,32 +249,28 @@
 
 .like-icon:hover .core {
   fill: var(--contour-color);
-  transition-delay: 0.05s;
+  transition: fill 0.3s ease 0s;
 }
 
 .like-icon:hover .main-body {
   fill: var(--contour-color);
-  transition-delay: 0.05s;
+  transition: fill 0.3s ease 0.05s;
 }
 
 .like-icon:not(:hover) .core {
   fill: none;
-  transition-delay: 0.03s;
+  transition: fill 0.3s ease 0.03s;
 }
 
 .like-icon:not(:hover) .main-body {
   fill: none;
-  transition-delay: 0s;
+  transition: fill 0.3s ease 0s;
 }
 
-.like-icon:active .core {
-  fill: var(--animation-fill-color);
-  transition-delay: 0.05s;
-}
-
+.like-icon:active .core,
 .like-icon:active .main-body {
   fill: var(--animation-fill-color);
-  transition-delay: 0.05s;
+  transition: fill 0.3s ease 0s;
 }
 
 .like-icon.is-liked .heart {
@@ -302,18 +296,16 @@
 
 .like-icon.is-liked .core {
   fill: var(--animation-fill-color);
-  transition-delay: 0.05s;
 }
 
 .like-icon.is-liked .main-body {
   fill: var(--animation-fill-color);
-  transition-delay: 0.05s;
+  transition: fill 0.3s ease 0.06s;
 }
 
 .like-icon.is-liked .contour {
   fill: var(--animation-fill-color);
-  transition: fill 0.3s ease;
-  transition-delay: 0.11s;
+  transition: fill 0.1s linear 0s;
 }
 
 dialog.dialog {
@@ -433,7 +425,7 @@ button:not(.card__icon-button):hover svg {
   }
 
   .button__container {
-    padding: 52px 34px 100px;
+    padding: 2px 34px 100px;
   }
 
   .bottom__button {
